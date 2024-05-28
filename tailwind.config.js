@@ -2,10 +2,10 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{js,jsx}',
-    './components/**/*.{js,jsx}',
-    './app/**/*.{js,jsx}',
-    './src/**/*.{js,jsx}',
+    "./pages/**/*.{js,jsx}",
+    "./components/**/*.{js,jsx}",
+    "./app/**/*.{js,jsx}",
+    "./src/**/*.{js,jsx}",
   ],
   prefix: "",
   theme: {
@@ -17,6 +17,12 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        rubik: ["--font-rubik", "sans-serif"],
+        barlow: ["--font-barlow", "sans-serif"],
+        poppins: ["--font-poppins", "sans-serif"],
+        berlin: ["var(--font-berlin-sans)", "sans-serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -51,6 +57,20 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        csPrimary: {
+          DEFAULT: "#cf22f1",
+        },
+        csSecondary: {
+          DEFAULT: "#597ad8",
+        },
+        csAccent: {
+          DEFAULT: "#FFFFFF",
+          foreground: "#fefefe",
+        },
+        csDarkBlue: {
+          DEFAULT: "#161035",
+          foreground: "#08012d",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -74,4 +94,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};
