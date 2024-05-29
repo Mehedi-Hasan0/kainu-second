@@ -18,10 +18,11 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        rubik: ["--font-rubik", "sans-serif"],
-        barlow: ["--font-barlow", "sans-serif"],
-        poppins: ["--font-poppins", "sans-serif"],
+        rubik: ["var(--font-rubik)", "sans-serif"],
+        barlow: ["var(--font-barlow)", "sans-serif"],
+        poppins: ["var(--font-poppins)", "sans-serif"],
         berlin: ["var(--font-berlin-sans)", "sans-serif"],
+        archivo: ["var(--font-archivo)", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",

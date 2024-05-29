@@ -1,4 +1,4 @@
-import { Barlow, Poppins, Rubik } from "next/font/google";
+import { Barlow, Poppins, Rubik, Archivo } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import ScrollProvider from "./_scrollProvider";
@@ -22,6 +22,12 @@ const poppins = Poppins({
   variable: "--font-poppins",
 });
 
+const archivo = Archivo({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-archivo",
+});
+
 const berlinSans = localFont({
   src: [
     {
@@ -41,7 +47,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${berlinSans.variable} ${rubik.variable} ${barlow.variable} ${poppins.variable}`}
+        className={`${berlinSans.variable} ${rubik.variable} ${barlow.variable} ${poppins.variable} ${archivo.variable}`}
       >
         <ScrollProvider>
           <Navbar />
