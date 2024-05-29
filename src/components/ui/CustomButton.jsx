@@ -13,6 +13,7 @@ const CustomButton = ({
   btnBgColor = "bg-transparent",
   textColor = "text-white",
   borderColor = "border border-gray-400",
+  extraStyle = "rounded-lg",
   textLabel,
   ...attributes
 }) => {
@@ -55,7 +56,7 @@ const CustomButton = ({
 
   return (
     <div
-      className={`rounded-lg cursor-pointer relative flex justify-center items-center px-6 py-3 customButton ${btnBgColor} ${borderColor}`}
+      className={`cursor-pointer relative flex justify-center items-center px-6 py-3 customButton ${btnBgColor} ${borderColor} ${extraStyle}`}
       style={{ overflow: "hidden" }}
       onMouseEnter={() => {
         manageMouseEnter();
