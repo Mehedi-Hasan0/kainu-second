@@ -35,3 +35,21 @@ export const bannerLogo = [
     icon: "/assets/images/banner/banner-logo-6.png",
   },
 ];
+
+export const startedData = [
+  {
+    img: "/assets/images/started/started-1.png",
+    title: "Create Account",
+    desc: "It's free! Sign up today and earn money.",
+  },
+  {
+    img: "/assets/images/started/started-2.png",
+    title: "Complete Task",
+    desc: "After you select a task, read the instructions.",
+  },
+  {
+    img: "/assets/images/started/started-3.png",
+    title: "Withdraw",
+    desc: "Exchange your earned coins into real money!",
+  },
+];
