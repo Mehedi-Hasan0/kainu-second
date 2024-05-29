@@ -1,3 +1,4 @@
+import EarningOpportunity from "@/components/EarningOpportunity";
 import Started from "@/components/Started";
 import SuperCharged from "@/components/SuperCharged";
 import Banner from "@/components/banner/Banner";
@@ -10,6 +11,7 @@ export default function Home() {
       <Started />
       <SuperCharged />
       <Features />
+      <EarningOpportunity />
     </main>
   );
 }
