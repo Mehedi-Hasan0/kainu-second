@@ -11,9 +11,9 @@ export default function FeaturesCard() {
           key={card.heading}
           className="flex flex-col gap-2 lg:gap-3 max-w-[600px] p-4 bg-csDarkBlue rounded-md group cursor-pointer"
         >
-          <div className="w-full bg-csDarkBlue-foreground border border-csDarkBlue rounded-xl px-7 py-3 flex items-center justify-between gap-5">
+          <div className="w-full bg-csDarkBlue-foreground border border-csDarkBlue rounded-xl px-5 py-2 lg:px-7 lg:py-3 flex items-center justify-between gap-5">
             <h2
-              className={`text-2xl md:text-3xl xl:text-4xl font-extrabold font-urbanist flex w-fit gap-3 ${
+              className={`text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-extrabold font-urbanist flex w-fit gap-3 ${
                 idx === 0 ? "flex-row" : "flex-row-reverse"
               }`}
             >
@@ -21,20 +21,20 @@ export default function FeaturesCard() {
               <span className="text-csPrimary">{card.coloredHeading}</span>
             </h2>
             {/* star */}
-            <div className="rounded-full bg-csDarkBlue p-3">
+            <div className="rounded-full bg-csDarkBlue p-2 lg:p-3">
               <Image
                 src={"/assets/images/star.svg"}
                 alt=""
                 width={32}
                 height={32}
-                className="group-hover:hidden block all-transition w-7 h-7"
+                className="group-hover:hidden block all-transition w-5 h-5 lg:w-7 lg:h-7"
               />
               <Image
                 src={"/assets/images/star-fill.svg"}
                 alt=""
                 width={32}
                 height={32}
-                className="group-hover:block hidden all-transition w-7 h-7"
+                className="group-hover:block hidden all-transition w-5 h-5 lg:w-7 lg:h-7"
               />
             </div>
           </div>
