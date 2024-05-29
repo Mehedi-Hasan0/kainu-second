@@ -29,10 +29,10 @@ export default function Navbar() {
   return (
     <header
       ref={headerRef}
-      className={` top-0 left-0 w-full z-50 py-3 lg:py-4 2xl:py-6 ${
+      className={` top-0 left-0 w-full z-50 ${
         navHeight > 100
-          ? "fixed bg-csDarkBlue animate-fade-in border-b border-gray-800"
-          : "absolute"
+          ? "fixed bg-csDarkBlue animate-fade-in border-b border-gray-800 py-3 lg:py-4 2xl:py-6"
+          : "absolute py-4 lg:py-5 2xl:py-6 "
       }`}
     >
       <nav className="main-container flex-center gap-10">
