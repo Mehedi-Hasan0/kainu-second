@@ -33,7 +33,7 @@ const Started = () => {
                 <p className="font-rubik text-csPrimary font-medium mini-text">
                   Step {idx + 1}
                 </p>
-                <h3 className="font-barlow font-extrabold uppercase text-lg sm:text-xs md:text-sm lg:text-base xl:text-xl 2xl:text-2xl text-csAccent-foreground">
+                <h3 className="font-barlow font-extrabold uppercase text-lg sm:text-xs md:text-sm lg:text-base xl:text-xl 2xl:text-2xl text-csAccent-foreground -mt-1">
                   {data.title}
                 </h3>
                 <p className="link-text text-[#d5d5d5]">{data.desc}</p>
