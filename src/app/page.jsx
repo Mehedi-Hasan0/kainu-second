@@ -1,6 +1,7 @@
 import Started from "@/components/Started";
 import SuperCharged from "@/components/SuperCharged";
 import Banner from "@/components/banner/Banner";
+import Features from "@/components/features/Features";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Banner />
       <Started />
       <SuperCharged />
+      <Features />
     </main>
   );
 }

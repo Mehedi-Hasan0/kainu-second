@@ -250,6 +250,19 @@ body::-webkit-scrollbar-thumb {
   border-radius: 4px;
 }
 
+/* hide scroll container */
+.hide-scroll-container {
+  overflow-x: scroll; /* Enable horizontal scrolling */
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  white-space: nowrap; /* Prevent wrapping of content */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.hide-scroll-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers */
+}
+
 @keyframes fadeInLeft {
   0% {
     opacity: 0;

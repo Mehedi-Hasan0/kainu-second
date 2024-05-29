@@ -72,6 +72,7 @@ module.exports = {
           DEFAULT: "#161035",
           foreground: "#08012d",
         },
+        lightBlue: "#345fb8",
       },
       borderRadius: {
         lg: "var(--radius)",
