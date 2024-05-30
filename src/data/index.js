@@ -109,3 +109,22 @@ export const opportunityData = [
     desc: "Free yourself from complexities videos vital aspect.",
   },
 ];
+
+export const bookCards = [
+  {
+    img: "/assets/images/explore/explore-img-1.webp",
+    heading: "Your",
+    label: "Profile",
+    desc: "We’ve set on the path make gamer’s Social Gaming Platrm",
+  },
+  {
+    img: "/assets/images/explore/explore-img-2.webp",
+    heading: "Streaming Page",
+    desc: "We’ve set on the path make gamer’s Social Gaming Platrm",
+  },
+  {
+    img: "/assets/images/explore/explore-img-3.webp",
+    heading: "Matchmaking",
+    desc: "We’ve set on the path make gamer’s Social Gaming Platrm",
+  },
+];

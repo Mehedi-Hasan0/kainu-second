@@ -1,3 +1,4 @@
+import Bookapp from "@/components/Bookapp";
 import EarningOpportunity from "@/components/EarningOpportunity";
 import Started from "@/components/Started";
 import SuperCharged from "@/components/SuperCharged";
@@ -12,6 +13,7 @@ export default function Home() {
       <SuperCharged />
       <Features />
       <EarningOpportunity />
+      <Bookapp />
     </main>
   );
 }
