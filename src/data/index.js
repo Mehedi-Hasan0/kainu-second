@@ -128,3 +128,22 @@ export const bookCards = [
     desc: "We’ve set on the path make gamer’s Social Gaming Platrm",
   },
 ];
+
+export const faqData = [
+  {
+    ques: "What is katanainu?",
+    ans: "Yes. It adheres to the WAI-ARIA design pattern.",
+  },
+  {
+    ques: "How long does a withdrawal take?",
+    ans: "Yes. It adheres to the WAI-ARIA design pattern.",
+  },
+  {
+    ques: "How do I withdraw my coins?",
+    ans: "Yes. It adheres to the WAI-ARIA design pattern.",
+  },
+  {
+    ques: "Here are some Frequently asked Questions to help",
+    ans: "Yes. It adheres to the WAI-ARIA design pattern.",
+  },
+];

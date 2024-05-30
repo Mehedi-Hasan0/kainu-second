@@ -1,6 +1,7 @@
 import Bookapp from "@/components/Bookapp";
 import Collective from "@/components/Collective";
 import EarningOpportunity from "@/components/EarningOpportunity";
+import Faq from "@/components/Faq";
 import GamingPlatform from "@/components/GamingPlatform";
 import Multichain from "@/components/Multichain";
 import Started from "@/components/Started";
@@ -20,6 +21,7 @@ export default function Home() {
       <Multichain />
       <Collective />
       <GamingPlatform />
+      <Faq />
     </main>
   );
 }
