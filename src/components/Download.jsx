@@ -3,7 +3,7 @@ import { FaApple, FaGooglePlay } from "react-icons/fa6";
 
 export default function Download() {
   return (
-    <section className=" pb-8 sm:pb-10 md:pb-14 lg:pb-16 xl:pb-24 2xl:pb-32">
+    <section>
       <div className="main-container bg-[#08051f] border border-slate-800 rounded-lg flex flex-col-reverse md:flex-row items-center gap-5 md:gap-6 md:justify-between">
         <div className="flex-1">
           <div className="sm:px-6 sm:pt-7 md:px-9 md:pt-12 xl:px-14 xl:pt-16">

@@ -10,6 +10,7 @@ import Statistics from "@/components/Statistics";
 import SuperCharged from "@/components/SuperCharged";
 import Banner from "@/components/banner/Banner";
 import Features from "@/components/features/Features";
+import Footer from "@/components/shared/footer/Footer";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <Faq />
       <Statistics />
       <Download />
+      <Footer />
     </main>
   );
 }
