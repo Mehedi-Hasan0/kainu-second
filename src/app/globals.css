@@ -303,3 +303,8 @@ body::-webkit-scrollbar-thumb {
   width: calc(100% - 4px);
   height: calc(100% - 4px);
 }
+
+.collective-card {
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+}
