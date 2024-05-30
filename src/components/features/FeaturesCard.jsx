@@ -1,14 +1,22 @@
+"use client";
+
 import { featuresCard } from "@/data";
 import Image from "next/image";
 import CustomButton from "../ui/CustomButton";
 import { Button } from "../ui/button";
+import { motion } from "framer-motion";
+import { cardVariant } from "../anim";
 
 export default function FeaturesCard() {
   return (
     <div className="flex flex-col md:flex-row items-center gap-10 justify-around w-full mt-12 xl:mt-20">
       {featuresCard.map((card, idx) => (
-        <div
+        <motion.div
           key={card.heading}
+          custom={idx}
+          initial="initial"
+          variants={cardVariant}
+          whileInView="enter"
           className="flex flex-col gap-2 lg:gap-3 max-w-[600px] p-4 bg-csDarkBlue rounded-md group cursor-pointer"
         >
           <div className="w-full bg-csDarkBlue-foreground border border-csDarkBlue rounded-xl px-5 py-2 lg:px-7 lg:py-3 flex items-center justify-between gap-5">
@@ -73,7 +81,7 @@ export default function FeaturesCard() {
               </Button>
             </div>
           ) : null}
-        </div>
+        </motion.div>
       ))}
     </div>
   );

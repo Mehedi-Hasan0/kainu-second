@@ -1,5 +1,9 @@
+"use client";
+
 import { opportunityData } from "@/data";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { cardVariant } from "./anim";
 
 const EarningOpportunity = () => {
   return (
@@ -12,8 +16,12 @@ const EarningOpportunity = () => {
         {/* data card */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-5 lg:gap-4 2xl:gap-8 items-center justify-evenly 2xl:mx-12 mx-auto">
           {opportunityData.map((data, idx) => (
-            <div
+            <motion.div
               key={idx}
+              variants={cardVariant}
+              custom={idx}
+              initial="initial"
+              whileInView={"enter"}
               className="flex flex-col items-center gap-3 md:gap-2 xl:gap-3 bg-csDarkBlue-foreground px-10 py-8 sm:px-12 sm:py-10 lg:px-2 lg:py-6 xl:px-6 xl:py-8 rounded-2xl lg:rounded-3xl md:max-w-[370px]"
             >
               <Image
@@ -29,7 +37,7 @@ const EarningOpportunity = () => {
               <p className="text-[10px] lg:text-xs xl:text-sm 2xl:text-base opacity-70 text-center">
                 {data.desc}
               </p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

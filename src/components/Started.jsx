@@ -1,5 +1,9 @@
+"use client";
+
 import { startedData } from "@/data";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { cardVariant } from "./anim";
 
 const Started = () => {
   return (
@@ -10,8 +14,12 @@ const Started = () => {
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7 sm:gap-8 md:gap-4 lg:gap-6 xl:gap-8">
           {startedData.map((data, idx) => (
-            <div
+            <motion.div
               key={idx}
+              custom={idx}
+              variants={cardVariant}
+              initial="initial"
+              whileInView={"enter"}
               className="flex flex-col gap-4 md:gap-5 lg:gap-6 xl:gap-7"
             >
               <div className="bg-csDarkBlue p-2 lg:p-3 rounded-2xl w-full h-fit sm:w-fit sm:h-fit">
@@ -38,7 +46,7 @@ const Started = () => {
                 </h3>
                 <p className="link-text text-[#d5d5d5]">{data.desc}</p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

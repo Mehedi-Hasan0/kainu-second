@@ -19,3 +19,66 @@ export const cardVariant = {
     },
   }),
 };
+
+export const leftAnimVariant = {
+  initial: {
+    opacity: 0,
+    x: -20,
+  },
+  enter: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.6,
+      opacity: {
+        duration: 1.2,
+      },
+      x: {
+        duration: 1,
+      },
+      ease: [0.215, 0.61, 0.355, 1],
+    },
+  },
+};
+
+export const rightAnimVariant = {
+  initial: {
+    opacity: 0,
+    x: 20,
+  },
+  enter: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.6,
+      opacity: {
+        duration: 1.2,
+      },
+      x: {
+        duration: 1,
+      },
+      ease: [0.215, 0.61, 0.355, 1],
+    },
+  },
+};
+
+export const bottomAnimVariant = {
+  initial: {
+    opacity: 0,
+    y: 40,
+  },
+  enter: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      opacity: {
+        duration: 1.2,
+      },
+      y: {
+        duration: 1,
+      },
+      ease: [0.215, 0.61, 0.355, 1],
+    },
+  },
+};

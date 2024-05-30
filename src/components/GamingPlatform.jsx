@@ -5,6 +5,7 @@ import pl3 from "../../public/assets/images/platform/pl-3.png";
 import pl4 from "../../public/assets/images/platform/pl-4.png";
 import pl5 from "../../public/assets/images/platform/pl-5.png";
 import pl6 from "../../public/assets/images/platform/pl-6.png";
+import Example from "./PlatFormContent";
 
 const GamingPlatform = () => {
   return (
@@ -24,7 +25,10 @@ const GamingPlatform = () => {
       </div>
 
       {/* content */}
-      <div className="grid grid-cols-3 lg:flex flex-row items-center mt-8 lg:mt-14 xl:mt-16 mx-auto">
+      <div className="hidden lg:block">
+        <Example />
+      </div>
+      <div className="grid grid-cols-3 mt-8 lg:mt-14 xl:mt-16 mx-auto lg:hidden">
         <Image
           src={pl1}
           alt=""
