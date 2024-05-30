@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import ScrollProvider from "./_scrollProvider";
 import Navbar from "@/components/shared/navbar/Navbar";
+import LoadingProvider from "./_loadingProvider";
 
 const rubik = Rubik({
   subsets: ["latin"],
@@ -49,10 +50,12 @@ export default function RootLayout({ children }) {
       <body
         className={`${berlinSans.variable} ${rubik.variable} ${barlow.variable} ${poppins.variable} ${archivo.variable}`}
       >
-        <ScrollProvider>
-          <Navbar />
-          {children}
-        </ScrollProvider>
+        <LoadingProvider>
+          <ScrollProvider>
+            <Navbar />
+            {children}
+          </ScrollProvider>
+        </LoadingProvider>
       </body>
     </html>
   );

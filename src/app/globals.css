@@ -120,7 +120,7 @@
     @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl;
   }
   .sub-heading {
-    @apply text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-[2.625rem] font-semibold;
+    @apply text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-[2.625rem];
   }
   .cta-heading {
     @apply text-3xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold;

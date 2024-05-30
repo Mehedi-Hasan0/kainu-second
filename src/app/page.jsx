@@ -1,5 +1,6 @@
 import Bookapp from "@/components/Bookapp";
 import EarningOpportunity from "@/components/EarningOpportunity";
+import Multichain from "@/components/Multichain";
 import Started from "@/components/Started";
 import SuperCharged from "@/components/SuperCharged";
 import Banner from "@/components/banner/Banner";
@@ -14,6 +15,7 @@ export default function Home() {
       <Features />
       <EarningOpportunity />
       <Bookapp />
+      <Multichain />
     </main>
   );
 }

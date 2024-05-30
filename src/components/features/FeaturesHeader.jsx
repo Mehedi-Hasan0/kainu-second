@@ -4,7 +4,7 @@ import CustomButton from "../ui/CustomButton";
 export default function FeaturesHeader() {
   return (
     <div className="flex flex-col gap-4 items-center">
-      <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-5xl font-berlin uppercase">
+      <h1 className="sub-heading font-barlow font-extrabold uppercase">
         Features of the <span className="text-csPrimary">gaming</span> Platfrom
       </h1>
       <p className="text-xs xl:text-sm 2xl:text-base font-poppins text-gray-400 w-[300px] sm:w-[400px] md:w-[510px] 2xl:w-[750px] text-center">

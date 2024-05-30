@@ -1,6 +1,7 @@
 import Image from "next/image";
 import BannerLogo from "./BannerLogo";
 import BannerTitle from "./BannerTitle";
+import jelly from "../../../public/assets/images/banner/jelly.webp";
 
 const Banner = () => {
   return (
@@ -9,10 +10,12 @@ const Banner = () => {
         {/* elements */}
         <div className="absolute top-28 -right-12 sm:top-24 sm:-right-20 md:top-20 md:-right-[110px] lg:top-24 lg:-right-[170px] xl:top-16 xl:-right-[225px] 2xl:top-16 2xl:-right-[300px]">
           <Image
-            src={"/assets/images/banner/jelly.webp"}
+            src={jelly}
             alt=""
             width={600}
             height={600}
+            sizes="(max-width: 1280px) 100vw, 50vw"
+            placeholder="blur"
             className="w-36 sm:w-[200px] md:w-[300px] lg:w-[400px] xl:w-[500px] 2xl:w-[600px]"
           />
         </div>
