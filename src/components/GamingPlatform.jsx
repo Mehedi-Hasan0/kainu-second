@@ -8,7 +8,7 @@ import pl6 from "../../public/assets/images/platform/pl-6.png";
 
 const GamingPlatform = () => {
   return (
-    <section className="pb-8 sm:pb-10 md:pb-14 lg:pb-16 xl:pb-24 2xl:pb-32">
+    <section className="section-padding">
       {/* <div className="r"> */}
       <div className="main-container flex flex-col gap-2 lg:gap-3 2xl:gap-4 items-center">
         <h1 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-berlin uppercase">
@@ -24,7 +24,7 @@ const GamingPlatform = () => {
       </div>
 
       {/* content */}
-      <div className="flex flex-row items-center mt-8 lg:mt-14 xl:mt-16 mx-auto">
+      <div className="grid grid-cols-3 lg:flex flex-row items-center mt-8 lg:mt-14 xl:mt-16 mx-auto">
         <Image
           src={pl1}
           alt=""
