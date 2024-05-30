@@ -1,4 +1,5 @@
 import Bookapp from "@/components/Bookapp";
+import Collective from "@/components/Collective";
 import EarningOpportunity from "@/components/EarningOpportunity";
 import Multichain from "@/components/Multichain";
 import Started from "@/components/Started";
@@ -16,6 +17,7 @@ export default function Home() {
       <EarningOpportunity />
       <Bookapp />
       <Multichain />
+      <Collective />
     </main>
   );
 }
