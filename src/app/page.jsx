@@ -1,6 +1,7 @@
 import Bookapp from "@/components/Bookapp";
 import Collective from "@/components/Collective";
 import EarningOpportunity from "@/components/EarningOpportunity";
+import GamingPlatform from "@/components/GamingPlatform";
 import Multichain from "@/components/Multichain";
 import Started from "@/components/Started";
 import SuperCharged from "@/components/SuperCharged";
@@ -18,6 +19,7 @@ export default function Home() {
       <Bookapp />
       <Multichain />
       <Collective />
+      <GamingPlatform />
     </main>
   );
 }
