@@ -1,5 +1,6 @@
 import Bookapp from "@/components/Bookapp";
 import Collective from "@/components/Collective";
+import Download from "@/components/Download";
 import EarningOpportunity from "@/components/EarningOpportunity";
 import Faq from "@/components/Faq";
 import GamingPlatform from "@/components/GamingPlatform";
@@ -24,6 +25,7 @@ export default function Home() {
       <GamingPlatform />
       <Faq />
       <Statistics />
+      <Download />
     </main>
   );
 }
