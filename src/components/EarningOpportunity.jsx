@@ -14,7 +14,7 @@ const EarningOpportunity = () => {
           {opportunityData.map((data, idx) => (
             <div
               key={idx}
-              className="flex flex-col items-center gap-3 md:gap-2 xl:gap-3 bg-csDarkBlue-foreground px-10 py-8 sm:px-12 sm:py-10 lg:px-2 lg:py-6 xl:px-6 xl:py-8 rounded-2xl md:max-w-[370px]"
+              className="flex flex-col items-center gap-3 md:gap-2 xl:gap-3 bg-csDarkBlue-foreground px-10 py-8 sm:px-12 sm:py-10 lg:px-2 lg:py-6 xl:px-6 xl:py-8 rounded-2xl lg:rounded-3xl md:max-w-[370px]"
             >
               <Image
                 src={data.icon}
