@@ -1,6 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import CustomButton from "./ui/CustomButton";
 import aiGirl from "../../public/assets/images/ai-girl.png";
+import { motion } from "framer-motion";
+import { bottomAnimVariant, leftAnimVariant } from "./anim";
 
 const SuperCharged = () => {
   return (
@@ -11,14 +15,22 @@ const SuperCharged = () => {
       <div className="absolute bottom-52 -right-20 lg:bottom-56 lg:-right-32 w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] rounded-full bg-[#231b59]  hidden md:block blur-3xl" />
       <div className="main-container section-padding flex flex-col md:flex-row items-center justify-around gap-8 md:gap-10 lg:gap-12 relative z-10">
         {/* left content */}
-        <div className="flex flex-col gap-1 lg:gap-2">
+        <motion.div
+          variants={leftAnimVariant}
+          initial="initial"
+          whileInView={"enter"}
+          // viewport={{
+          //   once: true
+          // }}
+          className="flex flex-col gap-1 lg:gap-2"
+        >
           <p className="font-rubik text-csPrimary font-medium mini-text uppercase 2xl:tracking-[0.2em]">
             web2 and web3
           </p>
           <h3 className="font-barlow font-bold text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl text-csAccent-foreground -mt-1">
             The Super <br /> Charged <span>Gaming...</span>
           </h3>
-          <p className="font-rubik font-medium text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl text-[#d5d5d5] uppercase py-1 lg:py-2 2xl:my-4">
+          <p className="font-rubik font-medium text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl text-[#d5d5d5] uppercase py-1 xl:py-2 ">
             Platform Catering to{" "}
             <span className="text-csPrimary">Web2 and Web3</span> Users.
           </p>
@@ -40,9 +52,17 @@ const SuperCharged = () => {
               hoverColor3="secondary-gradient"
             />
           </div>
-        </div>
+        </motion.div>
         {/* right content */}
-        <div className="relative left-5 sm:left-0">
+        <motion.div
+          variants={bottomAnimVariant}
+          initial="initial"
+          whileInView={"enter"}
+          // viewport={{
+          //   once: true
+          // }}
+          className="relative left-5 sm:left-0"
+        >
           <Image
             src={aiGirl}
             alt="Ai girl avatar for web 2 and web 3"
@@ -60,7 +80,7 @@ const SuperCharged = () => {
               550K
             </h3>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

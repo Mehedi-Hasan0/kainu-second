@@ -1,4 +1,8 @@
+"use client";
+
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { cardVariant, leftAnimVariant, rightAnimVariant } from "./anim";
 
 const Multichain = () => {
   return (
@@ -20,7 +24,12 @@ const Multichain = () => {
         {/* content */}
         <div className="flex flex-col gap-8 md:gap-20 lg:gap-36 items-center justify-center mt-8 lg:mt-14 xl:mt-16 relative">
           {/* 1st element */}
-          <div className="flex flex-col md:flex-row items-center gap-2 md:gap-5 md:relative -right-[125px] lg:-right-[172px] xl:-right-[214px] 2xl:-right-[234px] z-10">
+          <motion.div
+            variants={rightAnimVariant}
+            initial="initial"
+            whileInView={"enter"}
+            className="flex flex-col md:flex-row items-center gap-2 md:gap-5 md:relative -right-[125px] lg:-right-[172px] xl:-right-[214px] 2xl:-right-[234px] z-10"
+          >
             <Image
               src={"/assets/icons/multichain-card-icon-2.png"}
               alt=""
@@ -57,9 +66,14 @@ const Multichain = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
           {/* 2nd element */}
-          <div className="flex flex-col md:flex-row-reverse items-center gap-2 md:gap-5 md:relative right-[118px] lg:right-[170px] xl:right-[210px] 2xl:right-[230px] z-10">
+          <motion.div
+            variants={leftAnimVariant}
+            initial="initial"
+            whileInView={"enter"}
+            className="flex flex-col md:flex-row-reverse items-center gap-2 md:gap-5 md:relative right-[118px] lg:right-[170px] xl:right-[210px] 2xl:right-[230px] z-10"
+          >
             <Image
               src={"/assets/icons/multichain-card-icon-1.svg"}
               alt=""
@@ -96,9 +110,14 @@ const Multichain = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
           {/* 3rd element */}
-          <div className="flex flex-col md:flex-row items-center gap-2 md:gap-5 md:relative -right-[127px] lg:-right-[172px] xl:-right-[214px] 2xl:-right-[234px] z-10 mt-9 md:mt-0">
+          <motion.div
+            variants={cardVariant}
+            initial="initial"
+            whileInView={"enter"}
+            className="flex flex-col md:flex-row items-center gap-2 md:gap-5 md:relative -right-[127px] lg:-right-[172px] xl:-right-[214px] 2xl:-right-[234px] z-10 mt-9 md:mt-0"
+          >
             <Image
               src={"/assets/icons/multichain-card-icon-1.svg"}
               alt=""
@@ -135,7 +154,7 @@ const Multichain = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* line */}
           <div className="hidden md:block absolute">

@@ -1,10 +1,19 @@
+"use client";
+
 import { bannerLogo } from "@/data";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import { logoVariant } from "./anim";
 
 const BannerLogo = () => {
   return (
-    <div className="flex-center">
+    <motion.div
+      variants={logoVariant}
+      initial="initial"
+      whileInView={"enter"}
+      className="flex-center"
+    >
       {bannerLogo.map((logo, idx) => (
         <Link href={"#"} key={idx}>
           <Image
@@ -16,7 +25,7 @@ const BannerLogo = () => {
           />
         </Link>
       ))}
-    </div>
+    </motion.div>
   );
 };
 
