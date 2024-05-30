@@ -8,7 +8,7 @@ import CustomButton from "@/components/ui/CustomButton";
 export default function FooterSocialLink() {
   return (
     <section className="bg-[#0c0a1a] overflow-hidden py-12 md:py-14 lg:py-16 2xl:py-24">
-      <div className="main-container max-screen-width section-margin">
+      <div className="main-container section-margin">
         <div className="flex flex-col sm:flex-row justify-between sm:items-end gap-5">
           <div className="flex flex-col gap-4">
             <p className="font-poppins font-semibold text-base lg:text-xl xl:text-2xl text-gray-400">
