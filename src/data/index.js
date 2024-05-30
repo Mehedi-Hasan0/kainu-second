@@ -147,3 +147,18 @@ export const faqData = [
     ans: "Yes. It adheres to the WAI-ARIA design pattern.",
   },
 ];
+
+export const statisticsData = [
+  {
+    num: "35,588",
+    label: "Total users",
+  },
+  {
+    num: "87K",
+    label: "Task completed",
+  },
+  {
+    num: "89,548,89",
+    label: "Total coins earned",
+  },
+];

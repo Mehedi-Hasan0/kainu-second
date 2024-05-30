@@ -5,6 +5,7 @@ import Faq from "@/components/Faq";
 import GamingPlatform from "@/components/GamingPlatform";
 import Multichain from "@/components/Multichain";
 import Started from "@/components/Started";
+import Statistics from "@/components/Statistics";
 import SuperCharged from "@/components/SuperCharged";
 import Banner from "@/components/banner/Banner";
 import Features from "@/components/features/Features";
@@ -22,6 +23,7 @@ export default function Home() {
       <Collective />
       <GamingPlatform />
       <Faq />
+      <Statistics />
     </main>
   );
 }
