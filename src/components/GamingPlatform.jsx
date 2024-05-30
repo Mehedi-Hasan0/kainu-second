@@ -9,7 +9,7 @@ import Example from "./PlatFormContent";
 
 const GamingPlatform = () => {
   return (
-    <section className="pt-8 sm:pt-10 md:pt-14 lg:pt-16 xl:pt-24 2xl:pt-32">
+    <section className="pt-8 sm:pt-10 md:pt-14 lg:pt-16 xl:pt-24 2xl:pt-32 pb-8 sm:pb-10 md:pb-14 lg:pb-0">
       {/* <div className="r"> */}
       <div className="main-container flex flex-col gap-2 lg:gap-3 2xl:gap-4 items-center">
         <h1 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-berlin uppercase">
