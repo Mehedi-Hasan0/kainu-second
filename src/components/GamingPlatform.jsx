@@ -1,11 +1,6 @@
 import Image from "next/image";
-import pl1 from "../../public/assets/images/platform/pl-1.png";
-import pl2 from "../../public/assets/images/platform/pl-2.png";
-import pl3 from "../../public/assets/images/platform/pl-3.png";
-import pl4 from "../../public/assets/images/platform/pl-4.png";
-import pl5 from "../../public/assets/images/platform/pl-5.png";
-import pl6 from "../../public/assets/images/platform/pl-6.png";
 import Example from "./PlatFormContent";
+import { Dialog, DialogContent, DialogTrigger } from "./ui/dialog";
 
 const GamingPlatform = () => {
   return (
@@ -29,60 +24,29 @@ const GamingPlatform = () => {
         <Example />
       </div>
       <div className="grid grid-cols-3 mt-8 lg:mt-14 xl:mt-16 mx-auto lg:hidden">
-        <Image
-          src={pl1}
-          alt=""
-          width={450}
-          height={250}
-          sizes="(max-width: 1280px) 100vw, 50vw"
-          placeholder="blur"
-          //   className="2xl:w-[250px]"
-        />
-        <Image
-          src={pl2}
-          alt=""
-          width={450}
-          height={250}
-          sizes="(max-width: 1280px) 100vw, 50vw"
-          placeholder="blur"
-          //   className="2xl:w-[250px]"
-        />
-        <Image
-          src={pl3}
-          alt=""
-          width={450}
-          height={250}
-          sizes="(max-width: 1280px) 100vw, 50vw"
-          placeholder="blur"
-          //   className="2xl:w-[250px]"
-        />
-        <Image
-          src={pl4}
-          alt=""
-          width={450}
-          height={250}
-          sizes="(max-width: 1280px) 100vw, 50vw"
-          placeholder="blur"
-          //   className="2xl:w-[250px]"
-        />
-        <Image
-          src={pl5}
-          alt=""
-          width={450}
-          height={250}
-          sizes="(max-width: 1280px) 100vw, 50vw"
-          placeholder="blur"
-          //   className="2xl:w-[250px]"
-        />
-        <Image
-          src={pl6}
-          alt=""
-          width={450}
-          height={250}
-          sizes="(max-width: 1280px) 100vw, 50vw"
-          placeholder="blur"
-          //   className="2xl:w-[250px]"
-        />
+        {imgData?.map((url, idx) => (
+          <Dialog key={idx}>
+            <DialogTrigger>
+              <Image
+                src={url}
+                alt=""
+                width={450}
+                height={250}
+                sizes="(max-width: 1280px) 100vw, 50vw"
+                className="hover:shadow-slate-100/30 hover:shadow-md all-transition hover:opacity-80"
+              />
+            </DialogTrigger>
+            <DialogContent className="mx-auto">
+              <Image
+                src={url}
+                alt=""
+                width={450}
+                height={250}
+                sizes="(max-width: 1280px) 100vw, 50vw"
+              />
+            </DialogContent>
+          </Dialog>
+        ))}
       </div>
       {/* </div> */}
     </section>
@@ -90,3 +54,12 @@ const GamingPlatform = () => {
 };
 
 export default GamingPlatform;
+
+const imgData = [
+  "/assets/images/platform/pl-1.png",
+  "/assets/images/platform/pl-2.png",
+  "/assets/images/platform/pl-3.png",
+  "/assets/images/platform/pl-4.png",
+  "/assets/images/platform/pl-5.png",
+  "/assets/images/platform/pl-6.png",
+];

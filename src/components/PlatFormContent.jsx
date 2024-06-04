@@ -3,6 +3,7 @@
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
+import { Dialog, DialogContent, DialogTrigger } from "./ui/dialog";
 
 const Example = () => {
   return (
@@ -35,13 +36,27 @@ const HorizontalScrollCarousel = () => {
 
 const Card = ({ card }) => {
   return (
-    <Image
-      src={card.url}
-      alt=""
-      width={450}
-      height={250}
-      sizes="(max-width: 1280px) 100vw, 50vw"
-    />
+    <Dialog>
+      <DialogTrigger>
+        <Image
+          src={card.url}
+          alt=""
+          width={450}
+          height={250}
+          sizes="(max-width: 1280px) 100vw, 50vw"
+          className="hover:shadow-slate-100/30 hover:shadow-md all-transition"
+        />
+      </DialogTrigger>
+      <DialogContent className="mx-auto">
+        <Image
+          src={card.url}
+          alt=""
+          width={450}
+          height={250}
+          sizes="(max-width: 1280px) 100vw, 50vw"
+        />
+      </DialogContent>
+    </Dialog>
   );
 };
 
