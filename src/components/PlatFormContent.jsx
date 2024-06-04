@@ -44,7 +44,7 @@ const Card = ({ card }) => {
           width={450}
           height={250}
           sizes="(max-width: 1280px) 100vw, 50vw"
-          className="hover:shadow-slate-100/30 hover:shadow-md all-transition"
+          className="hover:shadow-slate-100/30 hover:shadow-md hover:opacity-80 all-transition"
         />
       </DialogTrigger>
       <DialogContent className="mx-auto">
