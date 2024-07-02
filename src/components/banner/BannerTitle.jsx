@@ -13,16 +13,18 @@ const BannerTitle = () => {
         {/* bg element */}
         <div className=" primary-gradient opacity-30 absolute w-full h-full" />
         <p className="font-archivo uppercase tracking-wider title-heading relative z-10">
-          Your gaming platform
+          Kainu a great social
         </p>
       </div>
       {/* heading */}
-      <h1 className="heading uppercase text-center">
-        Katana Inu way to <br /> earn Money
+      <h1 className="heading uppercase text-center 2xl:leading-[0.8]">
+        <span>media gaming platform for</span> <br />{" "}
+        <span className="heading-variant-2">web2 and with rewards & more</span>
       </h1>
       {/* sub title */}
       <p className="font-barlow font-semibold title-heading text-[#d5d5d5]">
-        Set in a third-person perspective, Katana Inu immerses players
+        A world for Gamers, streamers, eSports and for Games under one
+        plattform.
       </p>
 
       {/* cta btn */}

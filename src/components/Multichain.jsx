@@ -28,7 +28,7 @@ const Multichain = () => {
             variants={rightAnimVariant}
             initial="initial"
             whileInView={"enter"}
-            className="flex flex-col md:flex-row items-center gap-2 md:gap-5 md:relative -right-[125px] lg:-right-[172px] xl:-right-[214px] 2xl:-right-[234px] z-10"
+            className="flex flex-col md:flex-row items-center gap-2 md:gap-5 md:relative -right-[125px] lg:-right-[176px] xl:-right-[218px] 2xl:-right-[238px] z-10"
           >
             <Image
               src={"/assets/icons/multichain-card-icon-2.png"}
@@ -54,15 +54,17 @@ const Multichain = () => {
               />
 
               <div className="relative z-10 px-12 py-8 lg:px-10 xl:px-20">
-                <p className="text-sm md:text-sm xl:text-base 2xl:text-lg font-rubik my-2 font-bold">
-                  Contribute to Total
+                <p className="text-sm md:text-sm xl:text-base 2xl:text-lg font-rubik my-2 uppercase font-bold">
+                  Rewards system
                 </p>
                 <p className="text-[10px] md:text-xs 2xl:text-sm text-gray-400">
-                  We’ve set on the path to make{" "}
-                  <br className="hidden md:block lg:hidden" /> a gamer’s{" "}
-                  <br className="block md:hidden" /> dream{" "}
-                  <br className="hidden lg:block" /> come true by{" "}
-                  <br className="hidden md:block lg:hidden" /> offering an adva
+                  Active gamers on different{" "}
+                  <br className="hidden md:block lg:hidden" /> Chains can{" "}
+                  <br className="block sm:hidden" />
+                  participate{" "}
+                  <br className="hidden sm:block md:hidden lg:block" /> into{" "}
+                  <br className="hidden md:block lg:hidden" /> web3 events and
+                  earn rewards
                 </p>
               </div>
             </div>
@@ -72,7 +74,7 @@ const Multichain = () => {
             variants={leftAnimVariant}
             initial="initial"
             whileInView={"enter"}
-            className="flex flex-col md:flex-row-reverse items-center gap-2 md:gap-5 md:relative right-[118px] lg:right-[170px] xl:right-[210px] 2xl:right-[230px] z-10"
+            className="flex flex-col md:flex-row-reverse items-center gap-2 md:gap-5 md:relative right-[104px] lg:right-[178px] xl:right-[218px] 2xl:right-[240px] 2xl:-mt-2 z-10"
           >
             <Image
               src={"/assets/icons/multichain-card-icon-1.svg"}
@@ -98,59 +100,15 @@ const Multichain = () => {
               />
 
               <div className="relative z-10 px-10 xl:px-20">
-                <p className="text-sm md:text-sm xl:text-base 2xl:text-lg font-rubik my-2 font-bold">
-                  Play a Key Role
+                <p className="text-sm md:text-sm xl:text-base 2xl:text-lg font-rubik uppercase my-2 font-bold">
+                  Blockchains like
                 </p>
                 <p className="text-[10px] md:text-xs 2xl:text-sm text-gray-400">
-                  We’ve set on the path to make{" "}
-                  <br className="hidden md:block lg:hidden" /> a gamer’s{" "}
-                  <br className="block md:hidden" /> dream{" "}
-                  <br className="hidden lg:block" /> come true by{" "}
-                  <br className="hidden md:block lg:hidden" /> offering an adva
-                </p>
-              </div>
-            </div>
-          </motion.div>
-          {/* 3rd element */}
-          <motion.div
-            variants={cardVariant}
-            initial="initial"
-            whileInView={"enter"}
-            className="flex flex-col md:flex-row items-center gap-2 md:gap-5 md:relative -right-[127px] lg:-right-[172px] xl:-right-[214px] 2xl:-right-[234px] z-10 mt-9 md:mt-0"
-          >
-            <Image
-              src={"/assets/icons/multichain-card-icon-1.svg"}
-              alt=""
-              width={60}
-              height={60}
-              className="w-12 lg:w-[60px]"
-            />
-
-            <span className="text-[10px] md:text-xs 2xl:text-sm text-csPrimary font-rubik">
-              STAPE 3
-            </span>
-
-            <div className="rounded-full w-10 h-10 lg:w-12 lg:h-12 border-2 border-csPrimary bg-csDarkBlue-foreground -mx-1 hidden md:block" />
-
-            <div className="relative flex justify-center items-center">
-              <Image
-                src={"/assets/images/text-bg.png"}
-                alt=""
-                width={600}
-                height={600}
-                className="w-[390px] h-32 lg:w-[500px] lg:h-[130px] xl:w-[420px] xl:h-[120px] 2xl:w-[480px] 2xl:h-[150px] absolute left-0"
-              />
-
-              <div className="relative z-10 px-12 py-8 lg:px-10 xl:px-20">
-                <p className="text-sm md:text-sm xl:text-base 2xl:text-lg font-rubik my-2 font-bold">
-                  User&apos;s Can Engage
-                </p>
-                <p className="text-[10px] md:text-xs 2xl:text-sm text-gray-400">
-                  We’ve set on the path to make{" "}
-                  <br className="hidden md:block lg:hidden" /> a gamer’s{" "}
-                  <br className="block md:hidden" /> dream{" "}
-                  <br className="hidden lg:block" /> come true by{" "}
-                  <br className="hidden md:block lg:hidden" /> offering an adva
+                  Polygon or Avalanche can{" "}
+                  <br className="hidden md:block lg:hidden" /> particapte and{" "}
+                  <br className="block sm:hidden" />
+                  sponsor <br className="hidden sm:block md:hidden lg:block" />{" "}
+                  <br className="hidden md:block lg:hidden" /> events or gamers.
                 </p>
               </div>
             </div>
@@ -163,7 +121,7 @@ const Multichain = () => {
               alt=""
               width={105}
               height={480}
-              className="h-[400px] lg:h-[480px]"
+              className="h-[200px] lg:h-[350px]"
             />
           </div>
         </div>
