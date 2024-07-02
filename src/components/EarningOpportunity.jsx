@@ -13,7 +13,7 @@ const EarningOpportunity = () => {
           Utility of the <span className="text-csPrimary">token...</span>
         </h2>
         {/* data card */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-5 lg:gap-4 2xl:gap-8 items-center justify-evenly 2xl:mx-24 mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-5 lg:gap-4 2xl:gap-8 justify-evenly 2xl:mx-24 mx-auto">
           {opportunityData.map((data, idx) => (
             <motion.div
               key={idx}
