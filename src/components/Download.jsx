@@ -55,13 +55,13 @@ export default function Download() {
         </div>
 
         {/* right side */}
-        <div className="flex-1">
+        <div className="flex-1 pt-8 md:pt-0">
           <Image
-            src={"/assets/images/started/started-3.png"}
+            src={"/assets/images/kainu-logo.png"}
             alt=""
             width={700}
             height={500}
-            className="flex items-end h-[170px] sm:h-[230px] lg:h-[300px] object-contain"
+            className="flex items-end h-[70px] sm:h-[80px] md:h-[90px] lg:h-[100px] 2xl:h-[120px] object-contain"
           />
         </div>
       </div>

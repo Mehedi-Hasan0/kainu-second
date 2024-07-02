@@ -89,24 +89,34 @@ export const featuresBtn = [
 
 export const opportunityData = [
   {
-    label: "Game & key seller",
-    icon: "/assets/images/opportunity/op-1.png",
-    desc: "Free yourself from complexities videos vital aspect.",
+    label: "Cooperate",
+    icon: "/assets/images/opportunity/corporate.png",
+    desc: "Cooparate with different Blockchains, to bridge to their chain.",
   },
   {
-    label: "ad generation",
-    icon: "/assets/images/opportunity/op-2.png",
-    desc: "Free yourself from complexities videos vital aspect.",
+    label: "Pying in-game",
+    icon: "/assets/images/opportunity/in-game.png",
+    desc: "Items, buying games, keys, NFTs etc with our token (with discounts)",
   },
   {
-    label: "Game promotion",
-    icon: "/assets/images/opportunity/op-3.png",
-    desc: "Free yourself from complexities videos vital aspect.",
+    label: "staking",
+    icon: "/assets/images/opportunity/staking.png",
+    desc: "Staking with different Levels.",
   },
   {
-    label: "More earning",
-    icon: "/assets/images/opportunity/op-4.png",
-    desc: "Free yourself from complexities videos vital aspect.",
+    label: "Rewards system",
+    icon: "/assets/images/opportunity/rewards.png",
+    desc: "To Gamers, most supported by the Chains (Multichain system)",
+  },
+  {
+    label: "Earning",
+    icon: "/assets/images/opportunity/earning.png",
+    desc: "Earning by Streaming in Tokens additionally",
+  },
+  {
+    label: "Promote Game",
+    icon: "/assets/images/opportunity/promote.png",
+    desc: "Promote Games to onboard (Grants program)",
   },
 ];
 
@@ -150,16 +160,24 @@ export const faqData = [
 
 export const statisticsData = [
   {
-    num: "35,588",
-    label: "Total users",
+    label: "Twitter",
+    icon: "/assets/icons/twitter.svg",
   },
   {
-    num: "87K",
-    label: "Task completed",
+    label: "Instagram",
+    icon: "/assets/icons/instagram.svg",
   },
   {
-    num: "89,548,89",
-    label: "Total coins earned",
+    label: "Pitchdeck",
+    icon: "/assets/icons/social-3.svg",
+  },
+  {
+    label: "Tokenomics",
+    icon: "/assets/icons/social-4.svg",
+  },
+  {
+    label: "Team",
+    icon: "/assets/icons/social-5.svg",
   },
 ];
 

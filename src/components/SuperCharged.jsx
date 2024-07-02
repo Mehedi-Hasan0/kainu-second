@@ -25,14 +25,14 @@ const SuperCharged = () => {
           className="flex flex-col gap-1 lg:gap-2"
         >
           <p className="font-rubik text-csPrimary font-medium mini-text uppercase 2xl:tracking-[0.2em]">
-            web2 and web3
+            ai is the key to success
           </p>
           <h3 className="font-barlow font-bold text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl text-csAccent-foreground -mt-1">
-            The Super <br /> Charged <span>Gaming...</span>
+            We will implement <br /> AI System To Find Matches
           </h3>
           <p className="font-rubik font-medium text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl text-[#d5d5d5] uppercase py-1 xl:py-2 ">
-            Platform Catering to{" "}
-            <span className="text-csPrimary">Web2 and Web3</span> Users.
+            Friends, <span className="text-csPrimary">Tournaments</span> and
+            more.
           </p>
           <p className="text-[10px] lg:text-xs xl:text-sm 2xl:text-base text-[#d5d5d5]/80 sm:max-w-[400px] md:max-w-[310px] lg:max-w-full">
             We’ve set on the path to make gamer dream come true by offering{" "}

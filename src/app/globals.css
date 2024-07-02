@@ -117,7 +117,10 @@
 
   /* TEXT STYLE */
   .heading {
-    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl;
+    @apply text-xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-6xl 2xl:text-8xl;
+  }
+  .heading-variant-2 {
+    @apply text-base sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl 2xl:text-7xl;
   }
   .sub-heading {
     @apply text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-[2.625rem];
@@ -307,4 +310,28 @@ body::-webkit-scrollbar-thumb {
 .collective-card {
   width: calc(100% - 2px);
   height: calc(100% - 2px);
+}
+
+.earning-card::before {
+  content: "";
+  position: absolute;
+  margin: -30px;
+  left: 0;
+  bottom: -20px;
+  width: 50px;
+  height: 60px;
+  transform: rotate(45deg);
+  background-color: #161035;
+}
+
+.earning-card::after {
+  content: "";
+  position: absolute;
+  margin: -30px;
+  right: 0;
+  top: -20px;
+  width: 50px;
+  height: 60px;
+  transform: rotate(45deg);
+  background-color: #161035;
 }

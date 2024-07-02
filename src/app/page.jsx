@@ -10,6 +10,7 @@ import Statistics from "@/components/Statistics";
 import SuperCharged from "@/components/SuperCharged";
 import Banner from "@/components/banner/Banner";
 import Features from "@/components/features/Features";
+import JoinParty from "@/components/join/JoinParty";
 import Footer from "@/components/shared/footer/Footer";
 
 export default function Home() {
@@ -17,13 +18,14 @@ export default function Home() {
     <main className="max-page-screen">
       <Banner />
       <Started />
-      <SuperCharged />
+      <JoinParty />
       <Features />
       <EarningOpportunity />
       <Bookapp />
       <Multichain />
       <Collective />
       <GamingPlatform />
+      <SuperCharged />
       <Faq />
       <Statistics />
       <Download />
