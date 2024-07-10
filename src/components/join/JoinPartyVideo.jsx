@@ -27,6 +27,8 @@ const JoinPartyVideo = () => {
         <div className="">
           <video
             src="https://themebeyond.com/videos/VID_20240627_140233_636.mp4"
+            autoPlay
+            muted
             loop
             poster="/assets/images/joinParty/media-1.png"
             width={"100%"}

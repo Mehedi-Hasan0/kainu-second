@@ -5,6 +5,7 @@ import EarningOpportunity from "@/components/EarningOpportunity";
 import Faq from "@/components/Faq";
 import GamingPlatform from "@/components/GamingPlatform";
 import Multichain from "@/components/Multichain";
+import SecondOpportunity from "@/components/SecondOpportunity";
 import Started from "@/components/Started";
 import Statistics from "@/components/Statistics";
 import SuperCharged from "@/components/SuperCharged";
@@ -23,6 +24,7 @@ export default function Home() {
       <Bookapp />
       <Multichain />
       <Collective />
+      <SecondOpportunity />
       <GamingPlatform />
       <Started />
       <SuperCharged />
