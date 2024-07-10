@@ -120,6 +120,29 @@ export const opportunityData = [
   },
 ];
 
+export const opportunitySecondData = [
+  {
+    label: "Game & key seller",
+    icon: "/assets/images/opportunity/op-1.png",
+    desc: "Free yourself from complexities videos vital aspect.",
+  },
+  {
+    label: "ad generation",
+    icon: "/assets/images/opportunity/op-2.png",
+    desc: "Free yourself from complexities videos vital aspect.",
+  },
+  {
+    label: "Game promotion",
+    icon: "/assets/images/opportunity/op-3.png",
+    desc: "Free yourself from complexities videos vital aspect.",
+  },
+  {
+    label: "More earning",
+    icon: "/assets/images/opportunity/op-4.png",
+    desc: "Free yourself from complexities videos vital aspect.",
+  },
+];
+
 export const bookCards = [
   {
     img: "/assets/images/explore/explore-img-1.webp",

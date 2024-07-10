@@ -1,5 +1,6 @@
 import { featuresBtn } from "@/data";
 import CustomButton from "../ui/CustomButton";
+import MobileFeaturesHeader from "./MobileFeaturesHeader";
 
 export default function FeaturesHeader() {
   return (
@@ -17,7 +18,7 @@ export default function FeaturesHeader() {
         {/* devider */}
         <div className="bg-gradient-to-r from-transparent via-lightBlue to-transparent min-w-[900px] h-[2px]" />
         {/* content btn */}
-        <div className="flex items-center gap-3 py-2 ml-40 pl-[14%] pr-[25%] sm:pr-[30%] md:ml-0 md:pl-[15%] md:pr-[15%] lg:pl-0 lg:pr-0 lg:px-0 w-[150vw] md:w-screen lg:w-fit lg:mx-auto lg:ml-0 overflow-x-auto hide-scroll-container">
+        <div className="lg:flex items-center gap-3 py-2 ml-40 lg:w-fit lg:mx-auto overflow-x-auto hide-scroll-container hidden">
           {featuresBtn.map((btn) => (
             <div key={btn.label}>
               <CustomButton
@@ -29,6 +30,11 @@ export default function FeaturesHeader() {
               />
             </div>
           ))}
+        </div>
+
+        {/* for mobile */}
+        <div className="block lg:hidden max-w-[300px] sm:max-w-[500px] md:max-w-screen-sm mx-auto">
+          <MobileFeaturesHeader />
         </div>
         {/* devider */}
         <div className="bg-gradient-to-r from-transparent via-lightBlue to-transparent min-w-[900px] h-[2px]" />
