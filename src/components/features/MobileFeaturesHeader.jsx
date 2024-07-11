@@ -57,7 +57,7 @@ const MobileFeaturesHeader = () => {
   return (
     <div className="relative flex justify-center">
       {/* Swiper carousel custom button */}
-      <div className="absolute w-full h-full z-10 flex justify-between items-center gap-5 text-white">
+      <div className="absolute w-full h-full flex justify-between items-center gap-5 text-white">
         {/* previous button */}
         <div
           onClick={handlePrev}
