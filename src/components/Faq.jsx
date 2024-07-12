@@ -2,7 +2,7 @@ import FaqAccordion from "./FaqAccordion";
 
 const Faq = () => {
   return (
-    <section className="pb-8 sm:pb-10 md:pb-14 lg:pb-16 xl:pb-24 2xl:pb-32">
+    <section className="py-8 sm:py-10 md:py-14 lg:py-16 xl:py-24 2xl:py-32">
       <div className="main-container flex flex-col justify-center items-center gap-6 md:gap-8 xl:gap-10 xl:max-w-[800px]">
         <div className="flex flex-col gap-2 md:gap-3 xl:gap-4">
           <p className="uppercase mini-text text-center">Learn more</p>

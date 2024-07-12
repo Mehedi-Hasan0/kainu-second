@@ -7,9 +7,9 @@ import { cardVariant } from "./anim";
 
 const SecondOpportunity = () => {
   return (
-    <section className="pb-8 sm:pb-10 md:pb-14 lg:pb-16 xl:pb-24 2xl:pb-32">
-      <div className="main-container flex flex-col gap-7 md:gap-8 lg:gap-10 xl:gap-12 bg-csDarkBlue py-8 sm:py-10 md:py-12 lg:px-16 lg:py-16 2xl:rounded-3xl">
-        <div className="flex flex-col md:flex-row items-end gap-7 md:gap-8 lg:gap-10 xl:gap-12 justify-evenly">
+    <section className="py-8 sm:py-10 md:py-12 lg:py-14 2xl:py-20 xl:max-w-screen-xl mx-auto">
+      <div className="main-container flex flex-col gap-5 xl:gap-6 py-8 sm:py-10 md:py-12 lg:px-16 lg:py-16 2xl:rounded-3xl">
+        <div className="flex flex-col md:flex-row items-end gap-7 md:gap-8 lg:gap-10 xl:gap-12 justify-between">
           <div className="bg-[#ce22f10e] py-8">
             <div className="flex flex-col items-center">
               <h2 className="text-center font-rubik sub-heading uppercase xl:leading-tight font-bold">
@@ -34,7 +34,7 @@ const SecondOpportunity = () => {
               custom={1}
               initial="initial"
               whileInView={"enter"}
-              className="flex flex-col items-center gap-3 md:gap-2 xl:gap-3 bg-csDarkBlue-foreground px-10 py-8 sm:px-12 sm:py-10 lg:px-2 lg:py-6 xl:px-6 xl:py-8 rounded-2xl lg:rounded-3xl md:max-w-[370px]"
+              className="flex flex-col items-center gap-3 md:gap-2 xl:gap-3 bg-csDarkBlue px-10 py-8 sm:px-12 sm:py-10 lg:px-2 lg:py-6 xl:px-6 xl:py-8 rounded-2xl lg:rounded-3xl md:max-w-[370px]"
             >
               <Image
                 src={opportunitySecondData[3].icon}
@@ -43,17 +43,17 @@ const SecondOpportunity = () => {
                 height={100}
                 className="h-10 lg:h-7 xl:h-8 2xl:h-10 object-contain"
               />
-              <h3 className="font-rubik font-medium text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl uppercase">
+              <h3 className="font-rubik font-medium text-[10px] sm:text-xs md:text-sm lg:text-base 2xl:text-lg uppercase">
                 {opportunitySecondData[3].label}
               </h3>
-              <p className="text-[10px] lg:text-xs xl:text-sm 2xl:text-base opacity-70 text-center">
+              <p className="text-[10px] lg:text-xs 2xl:text-sm opacity-70 text-center">
                 {opportunitySecondData[3].desc}
               </p>
             </motion.div>
           </div>
         </div>
         {/* data card */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-5 lg:gap-4 2xl:gap-8 items-center justify-evenly 2xl:mx-12 mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-5 lg:gap-4 2xl:gap-8 items-center justify-evenly mx-auto">
           {opportunitySecondData.map((data, idx) => (
             <motion.div
               key={idx}
@@ -61,7 +61,7 @@ const SecondOpportunity = () => {
               custom={idx}
               initial="initial"
               whileInView={"enter"}
-              className="flex flex-col items-center gap-3 md:gap-2 xl:gap-3 bg-csDarkBlue-foreground px-10 py-8 sm:px-12 sm:py-10 lg:px-2 lg:py-6 xl:px-6 xl:py-8 rounded-2xl lg:rounded-3xl md:max-w-[370px]"
+              className="flex flex-col items-center gap-3 md:gap-2 xl:gap-3 bg-csDarkBlue px-10 py-8 sm:px-12 sm:py-10 lg:px-2 lg:py-6 xl:px-6 xl:py-8 rounded-2xl lg:rounded-3xl md:max-w-[370px]"
             >
               <Image
                 src={data.icon}
@@ -70,10 +70,10 @@ const SecondOpportunity = () => {
                 height={100}
                 className="h-10 lg:h-7 xl:h-8 2xl:h-10 object-contain"
               />
-              <h3 className="font-rubik font-medium text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl uppercase">
+              <h3 className="font-rubik font-medium text-[10px] sm:text-xs md:text-sm lg:text-base  2xl:text-lg uppercase">
                 {data.label}
               </h3>
-              <p className="text-[10px] lg:text-xs xl:text-sm 2xl:text-base opacity-70 text-center">
+              <p className="text-[10px] lg:text-xs 2xl:text-sm opacity-70 text-center">
                 {data.desc}
               </p>
             </motion.div>
