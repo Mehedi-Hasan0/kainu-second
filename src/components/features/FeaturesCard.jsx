@@ -1,88 +1,113 @@
 "use client";
 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation } from "swiper/modules";
 import { featuresCard } from "@/data";
-import Image from "next/image";
-import CustomButton from "../ui/CustomButton";
-import { Button } from "../ui/button";
-import { motion } from "framer-motion";
-import { cardVariant } from "../anim";
+import { useEffect, useRef, useState } from "react";
+import Card from "./Card";
+import { IoIosArrowForward } from "react-icons/io";
+import FeaturesCardSkeletonLoader from "./FeaturesCardSkeletonLoader";
 
-export default function FeaturesCard() {
+export default function FeaturesCard({ activeMenuIdx, menuContentLoading }) {
+  const [swiperLoaded, setSwiperLoaded] = useState(false);
+  const [slides, setSlides] = useState(
+    typeof window !== "undefined" && window.innerWidth < 640
+      ? 1
+      : typeof window !== "undefined" && window.innerWidth < 768
+      ? 1.5
+      : typeof window !== "undefined" && window.innerWidth < 1024
+      ? 1.7
+      : 2.5
+  );
+  const swiperRef = useRef(null);
+
+  useEffect(() => {
+    import("swiper").then((SwiperModule) => {
+      SwiperModule.default.use([Navigation]);
+      setSwiperLoaded(true);
+    });
+
+    function resizeCheck() {
+      setSlides(
+        typeof window !== "undefined" && window.innerWidth < 640
+          ? 1
+          : typeof window !== "undefined" && window.innerWidth < 768
+          ? 1.5
+          : typeof window !== "undefined" && window.innerWidth < 1024
+          ? 1.7
+          : 2.5
+      );
+    }
+
+    window.addEventListener("resize", resizeCheck);
+
+    return () => {
+      window.removeEventListener("resize", resizeCheck);
+    };
+  }, []);
+
+  const handlePrev = () => {
+    if (swiperRef.current) {
+      swiperRef.current.swiper.slidePrev();
+    }
+  };
+
+  const handleNext = () => {
+    if (swiperRef.current) {
+      swiperRef.current.swiper.slideNext();
+    }
+  };
+
+  if (!swiperLoaded) {
+    return <p className="text-white">loading</p>; // loading state
+  }
+
+  if (menuContentLoading) {
+    return <FeaturesCardSkeletonLoader />; // loading state
+  }
+
   return (
-    <div className="flex flex-col md:flex-row items-center gap-10 justify-around w-full mt-12 xl:mt-20">
-      {featuresCard.map((card, idx) => (
-        <motion.div
-          key={card.heading}
-          custom={idx}
-          initial="initial"
-          variants={cardVariant}
-          whileInView="enter"
-          className="flex flex-col gap-2 lg:gap-3 max-w-[600px] p-4 bg-csDarkBlue rounded-md group cursor-pointer"
+    <div className="relative flex justify-center">
+      {/* Swiper carousel custom button */}
+      <div className="absolute w-full h-full flex justify-between items-center gap-5 text-white">
+        {/* previous button */}
+        <div
+          onClick={handlePrev}
+          className="w-8 h-8  xl:w-10 xl:h-10 flex justify-center items-center -ml-8 xl:-ml-14 cursor-pointer"
         >
-          <div className="w-full bg-csDarkBlue-foreground border border-csDarkBlue rounded-xl px-5 py-2 lg:px-7 lg:py-3 flex items-center justify-between gap-5">
-            <h2
-              className={`text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-extrabold font-urbanist flex w-fit gap-3 ${
-                idx === 0 ? "flex-row" : "flex-row-reverse"
-              }`}
-            >
-              {card.heading}{" "}
-              <span className="text-csPrimary">{card.coloredHeading}</span>
-            </h2>
-            {/* star */}
-            <div className="rounded-full bg-csDarkBlue p-2 lg:p-3">
-              <Image
-                src={"/assets/images/star.svg"}
-                alt=""
-                width={32}
-                height={32}
-                className="group-hover:hidden block all-transition w-5 h-5 lg:w-7 lg:h-7"
-              />
-              <Image
-                src={"/assets/images/star-fill.svg"}
-                alt=""
-                width={32}
-                height={32}
-                className="group-hover:block hidden all-transition w-5 h-5 lg:w-7 lg:h-7"
-              />
-            </div>
-          </div>
-          <Image
-            src={card.imgUrl}
-            alt={card.heading}
-            width={650}
-            height={900}
-          />
-
-          <div className="flex flex-col gap-3 mt-3 lg:mt-5 md:pl-3 lg:pl-5">
-            <p className="text-xs md:text-sm xl:text-base text-gray-400">
-              {card.desc}
-            </p>
-          </div>
-
-          {/* btn */}
-          {idx === 0 ? (
-            <div className="w-fit mt-2 lg:mt-3 md:ml-3 lg:ml-5">
-              <CustomButton
-                textLabel="Get started"
-                btnBgColor="primary-gradient"
-                borderColor="border-none"
-                hoverColor1="bg-csDarkBlue"
-                hoverColor2="bg-[#FFC947]"
-                hoverColor3="secondary-gradient"
-              />
-            </div>
-          ) : idx == 1 ? (
-            <div className="primary-gradient rounded-md flex justify-center items-center w-fit h-10 md:h-12 xl:h-14 mt-2 lg:mt-3 md:ml-3 lg:ml-5">
-              <Button
-                variant="customAnimated"
-                className="px-6 sm:py-3 font-medium secondary-btn bg-[#161035]"
-              >
-                Watch Together
-              </Button>
-            </div>
-          ) : null}
-        </motion.div>
-      ))}
+          <IoIosArrowForward className="text-blue-500 w-7 h-7 xl:w-10 xl:h-10 rotate-180" />
+        </div>
+        {/* next button */}
+        <div
+          onClick={handleNext}
+          className="w-8 h-8  xl:w-10 xl:h-10 flex justify-center items-center -mr-8 xl:-mr-14 cursor-pointer"
+        >
+          <IoIosArrowForward className="text-blue-500 w-7 h-7 xl:w-10 xl:h-10" />
+        </div>
+      </div>
+      <Swiper
+        ref={swiperRef}
+        slidesPerView={slides}
+        spaceBetween={20}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={false}
+        modules={[Navigation]}
+        initialSlide={1}
+        className="mySwiper flex justify-center items-center max-w-[300px] sm:max-w-[570px] md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1170px] 2xl:max-w-[1280px]"
+      >
+        {featuresCard[activeMenuIdx].map((card, idx) => (
+          <SwiperSlide key={idx} className="">
+            <Card key={idx} card={card} idx={idx} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   );
 }

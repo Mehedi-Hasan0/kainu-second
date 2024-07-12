@@ -18,16 +18,16 @@ export default function Home() {
   return (
     <main className="max-page-screen">
       <Banner />
-      <JoinParty />
+      <SecondOpportunity />
+      <SuperCharged />
       <Features />
       <EarningOpportunity />
       <Bookapp />
       <Multichain />
       <Collective />
-      <SecondOpportunity />
       <GamingPlatform />
       <Started />
-      <SuperCharged />
+      <JoinParty />
       <Faq />
       <Statistics />
       <Download />

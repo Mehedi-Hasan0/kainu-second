@@ -12,10 +12,14 @@ import { featuresBtn } from "@/data";
 import CustomButton from "../ui/CustomButton";
 import { IoIosArrowForward } from "react-icons/io";
 
-const MobileFeaturesHeader = () => {
+const MobileFeaturesHeader = ({ handleActiveMenuIdx }) => {
   const [swiperLoaded, setSwiperLoaded] = useState(false);
   const [slides, setSlides] = useState(
-    typeof window !== "undefined" && window.innerWidth < 768 ? 2 : 3
+    typeof window !== "undefined" && window.innerWidth < 768
+      ? 2
+      : typeof window !== "undefined" && window.innerWidth < 1280
+      ? 3
+      : 4
   );
   const swiperRef = useRef(null);
 
@@ -27,7 +31,11 @@ const MobileFeaturesHeader = () => {
 
     function resizeCheck() {
       setSlides(
-        typeof window !== "undefined" && window.innerWidth < 768 ? 2 : 3
+        typeof window !== "undefined" && window.innerWidth < 768
+          ? 2
+          : typeof window !== "undefined" && window.innerWidth < 1280
+          ? 3
+          : 4
       );
     }
 
@@ -61,14 +69,14 @@ const MobileFeaturesHeader = () => {
         {/* previous button */}
         <div
           onClick={handlePrev}
-          className="w-8 h-8 flex justify-center items-center -ml-8"
+          className="w-8 h-8 flex justify-center items-center -ml-8 cursor-pointer"
         >
           <IoIosArrowForward className="text-blue-500 w-7 h-7 rotate-180" />
         </div>
         {/* next button */}
         <div
           onClick={handleNext}
-          className="w-8 h-8 flex justify-center items-center -mr-8"
+          className="w-8 h-8 flex justify-center items-center -mr-8 cursor-pointer"
         >
           <IoIosArrowForward className="text-blue-500 w-7 h-7" />
         </div>
@@ -85,14 +93,17 @@ const MobileFeaturesHeader = () => {
         initialSlide={1}
         className="mySwiper flex justify-center items-center"
       >
-        {featuresBtn.map((btn) => (
+        {featuresBtn.map((btn, idx) => (
           <SwiperSlide key={btn.label} className="">
             <CustomButton
+              onClick={() => handleActiveMenuIdx(idx)}
               textLabel={btn.label}
-              btnBgColor="bg-[#1d1a33]"
+              btnBgColor="bg-none"
               borderColor="border-none"
-              hoverColor3="primary-gradient"
-              extraStyle="rounded-full"
+              hoverColor1=""
+              hoverColor2=""
+              hoverColor3=""
+              extraStyle=""
             />
           </SwiperSlide>
         ))}
