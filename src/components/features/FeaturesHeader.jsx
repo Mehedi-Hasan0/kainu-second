@@ -17,7 +17,7 @@ export default function FeaturesHeader({ handleActiveMenuIdx }) {
       <div className="flex flex-col gap-2 mt-6 md:mt-8 lg:mt-10">
         {/* devider */}
         <div className="bg-gradient-to-r from-transparent via-lightBlue to-transparent min-w-[900px] h-[2px]" />
-        <div className="max-w-[300px] sm:max-w-[500px] md:max-w-screen-sm mx-auto">
+        <div className="max-w-[300px] sm:max-w-[500px] md:max-w-screen-sm xl:max-w-[1190px] 2xl:max-w-screen-xl mx-auto">
           <MobileFeaturesHeader handleActiveMenuIdx={handleActiveMenuIdx} />
         </div>
         {/* devider */}
