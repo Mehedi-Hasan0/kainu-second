@@ -18,8 +18,10 @@ const MobileFeaturesHeader = ({ handleActiveMenuIdx }) => {
     typeof window !== "undefined" && window.innerWidth < 768
       ? 2
       : typeof window !== "undefined" && window.innerWidth < 1280
-      ? 3
-      : 4
+      ? 4
+      : typeof window !== "undefined" && window.innerWidth < 1536
+      ? 6
+      : 7
   );
   const swiperRef = useRef(null);
 
@@ -34,8 +36,10 @@ const MobileFeaturesHeader = ({ handleActiveMenuIdx }) => {
         typeof window !== "undefined" && window.innerWidth < 768
           ? 2
           : typeof window !== "undefined" && window.innerWidth < 1280
-          ? 3
-          : 4
+          ? 4
+          : typeof window !== "undefined" && window.innerWidth < 1536
+          ? 6
+          : 7
       );
     }
 
