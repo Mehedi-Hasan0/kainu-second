@@ -9,8 +9,8 @@ const SecondOpportunity = () => {
   return (
     <section className="py-8 sm:py-10 md:py-12 lg:py-14 2xl:py-20 xl:max-w-screen-xl mx-auto">
       <div className="main-container flex flex-col gap-5 xl:gap-6 py-8 sm:py-10 md:py-12 lg:px-16 lg:py-16 2xl:rounded-3xl">
-        <div className="flex flex-col md:flex-row items-end gap-7 md:gap-8 lg:gap-10 xl:gap-12 justify-between">
-          <div className="bg-[#ce22f10e] py-8">
+        <div className="flex flex-col md:flex-row md:items-stretch md:justify-stretch gap-7 md:gap-8 lg:gap-10 xl:gap-12 justify-between">
+          <div className="bg-[#ce22f10e] py-8 md:w-[65%]">
             <div className="flex flex-col items-center">
               <h2 className="text-center font-rubik sub-heading uppercase xl:leading-tight font-bold">
                 The super <span className="text-csPrimary">gaming...</span>
@@ -28,13 +28,13 @@ const SecondOpportunity = () => {
               web3 users. Kainu Platform is a dream.
             </p>
           </div>
-          <div className="">
+          <div className="md:w-[35%]">
             <motion.div
               variants={cardVariant}
               custom={1}
               initial="initial"
               whileInView={"enter"}
-              className="flex flex-col items-center gap-3 md:gap-2 xl:gap-3 bg-csDarkBlue px-10 py-8 sm:px-12 sm:py-10 lg:px-2 lg:py-6 xl:px-6 xl:py-8 rounded-2xl lg:rounded-3xl md:max-w-[370px]"
+              className="flex flex-col items-center justify-center gap-3 md:gap-2 xl:gap-3 bg-csDarkBlue px-10 py-8 sm:px-12 sm:py-10 lg:px-2 lg:py-6 xl:px-6 xl:py-8 rounded-2xl lg:rounded-3xl h-full"
             >
               <Image
                 src={opportunitySecondData[3].icon}
@@ -53,7 +53,7 @@ const SecondOpportunity = () => {
           </div>
         </div>
         {/* data card */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-5 lg:gap-4 2xl:gap-8 items-center justify-evenly mx-auto">
+        <div className="flex flex-col justify-stretch sm:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-5 lg:gap-4 2xl:gap-8 items-center sm:justify-evenly mx-auto w-full place-items-center">
           {opportunitySecondData.map((data, idx) => (
             <motion.div
               key={idx}
@@ -61,7 +61,7 @@ const SecondOpportunity = () => {
               custom={idx}
               initial="initial"
               whileInView={"enter"}
-              className="flex flex-col items-center gap-3 md:gap-2 xl:gap-3 bg-csDarkBlue px-10 py-8 sm:px-12 sm:py-10 lg:px-2 lg:py-6 xl:px-6 xl:py-8 rounded-2xl lg:rounded-3xl md:max-w-[370px]"
+              className="flex flex-col items-center gap-3 md:gap-2 xl:gap-3 bg-csDarkBlue px-10 py-8 sm:px-12 sm:py-10 lg:px-2 lg:py-6 xl:px-6 xl:py-8 rounded-2xl lg:rounded-3xl w-full md:max-w-[370px]"
             >
               <Image
                 src={data.icon}

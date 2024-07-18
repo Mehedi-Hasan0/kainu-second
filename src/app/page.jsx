@@ -16,10 +16,13 @@ import Footer from "@/components/shared/footer/Footer";
 
 export default function Home() {
   return (
-    <main className="max-page-screen">
+    <main>
+      {/* <div className="max-page-screen"> */}
       <Banner />
       <SecondOpportunity />
+      {/* </div> */}
       <SuperCharged />
+      {/* <div className="max-page-screen"> */}
       <Features />
       <EarningOpportunity />
       <Bookapp />
@@ -32,6 +35,7 @@ export default function Home() {
       <Statistics />
       <Download />
       <Footer />
+      {/* </div> */}
     </main>
   );
 }
