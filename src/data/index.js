@@ -444,7 +444,7 @@ export const opportunityData = [
     desc: "Cooparate with different Blockchains, to bridge to their chain.",
   },
   {
-    label: "Pying in-game",
+    label: "Paying in-game",
     icon: "/assets/images/opportunity/in-game.png",
     desc: "Items, buying games, keys, NFTs etc with our token (with discounts)",
   },
@@ -456,7 +456,7 @@ export const opportunityData = [
   {
     label: "Rewards system",
     icon: "/assets/images/opportunity/rewards.png",
-    desc: "To Gamers, most supported by the Chains (Multichain system)",
+    desc: "To Gamers to get rewards by beeing active on our platform (Multichain System)",
   },
   {
     label: "Earning",

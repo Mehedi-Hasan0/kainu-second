@@ -10,7 +10,7 @@ const SecondOpportunity = () => {
     <section className="py-8 sm:py-10 md:py-12 lg:py-14 2xl:py-20 xl:max-w-screen-xl mx-auto">
       <div className="main-container flex flex-col gap-5 xl:gap-6 py-8 sm:py-10 md:py-12 lg:px-16 lg:py-16 2xl:rounded-3xl">
         <div className="flex flex-col md:flex-row md:items-stretch md:justify-stretch gap-7 md:gap-8 lg:gap-10 xl:gap-12 justify-between">
-          <div className="bg-[#ce22f10e] py-8 md:w-[65%]">
+          <div className="bg-[#ce22f10e] py-8 md:w-[65%] rounded-2xl lg:rounded-3xl border border-gray-500">
             <div className="flex flex-col items-center">
               <h2 className="text-center font-rubik sub-heading uppercase xl:leading-tight font-bold">
                 The super <span className="text-csPrimary">gaming...</span>
@@ -22,7 +22,7 @@ const SecondOpportunity = () => {
 
               <div className="bg-csPrimary w-full h-[2px] my-4" />
             </div>
-            <p className="text-xs xl:text-sm font-poppins text-gray-400 text-start sm:max-w-[320px] md:max-w-[500px] lg:max-w-[700px] mx-auto mt-4 px-8">
+            <p className="text-xs xl:text-sm font-poppins opacity-70 sm:max-w-[320px] md:max-w-[500px] lg:max-w-[700px] mx-auto mt-4 px-8 text-center lg:px-12 2xl:px-16">
               We’ve set on the path to make gamer dream come true by offering an
               advanced Social Media Gaming Platform catering to both web2 and
               web3 users. Kainu Platform is a dream.
@@ -34,7 +34,7 @@ const SecondOpportunity = () => {
               custom={1}
               initial="initial"
               whileInView={"enter"}
-              className="flex flex-col items-center justify-center gap-3 md:gap-2 xl:gap-3 bg-csDarkBlue px-10 py-8 sm:px-12 sm:py-10 lg:px-2 lg:py-6 xl:px-6 xl:py-8 rounded-2xl lg:rounded-3xl h-full"
+              className="flex flex-col items-center justify-center gap-3 md:gap-2 xl:gap-3 bg-csDarkBlue px-10 py-8 sm:px-12 sm:py-10 lg:px-2 lg:py-6 xl:px-6 xl:py-8 rounded-2xl lg:rounded-3xl h-full border border-gray-500"
             >
               <Image
                 src={opportunitySecondData[3].icon}
@@ -43,7 +43,7 @@ const SecondOpportunity = () => {
                 height={100}
                 className="h-10 lg:h-7 xl:h-8 2xl:h-10 object-contain"
               />
-              <h3 className="font-rubik font-medium text-[10px] sm:text-xs md:text-sm lg:text-base 2xl:text-lg uppercase">
+              <h3 className="font-rubik font-medium text-[10px] sm:text-xs md:text-sm lg:text-base 2xl:text-xl uppercase">
                 {opportunitySecondData[3].label}
               </h3>
               <p className="text-[10px] lg:text-xs 2xl:text-sm opacity-70 text-center">
@@ -61,7 +61,7 @@ const SecondOpportunity = () => {
               custom={idx}
               initial="initial"
               whileInView={"enter"}
-              className="flex flex-col items-center gap-3 md:gap-2 xl:gap-3 bg-csDarkBlue px-10 py-8 sm:px-12 sm:py-10 lg:px-2 lg:py-6 xl:px-6 xl:py-8 rounded-2xl lg:rounded-3xl w-full md:max-w-[370px]"
+              className="flex flex-col items-center gap-3 md:gap-2 xl:gap-3 bg-csDarkBlue px-10 py-8 sm:px-12 sm:py-10 lg:px-2 lg:py-6 xl:px-6 xl:py-8 rounded-2xl lg:rounded-3xl w-full md:max-w-[370px] border border-gray-500"
             >
               <Image
                 src={data.icon}
@@ -70,7 +70,7 @@ const SecondOpportunity = () => {
                 height={100}
                 className="h-10 lg:h-7 xl:h-8 2xl:h-10 object-contain"
               />
-              <h3 className="font-rubik font-medium text-[10px] sm:text-xs md:text-sm lg:text-base  2xl:text-lg uppercase">
+              <h3 className="font-rubik font-medium text-[10px] sm:text-xs md:text-sm lg:text-base  2xl:text-xl uppercase">
                 {data.label}
               </h3>
               <p className="text-[10px] lg:text-xs 2xl:text-sm opacity-70 text-center">
